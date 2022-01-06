@@ -1,0 +1,266 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #F3F2F2;
+}
+
+select.language {
+    display: none;
+}
+
+div#content {
+    display: grid;
+    font-family: Roboto, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    grid-template-rows: 10% 1fr 20%;
+    gap: 50px;
+}
+    
+header#MainHeader, footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid #3D4D42;
+    background-color: #88998D;
+}
+    
+article {
+    border-radius: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #3D4D42;
+    background-color: #88998D;
+}
+    
+header#MainHeader a.Logo img{
+    display: block;
+    height: 80%;
+    margin-top: 10%;
+}
+    
+header#MainHeader img#name {
+    display: block;
+    height: 40%;
+    align-self: center;
+}
+    
+article#Login h1 {
+    color: #4D3D3C;
+    text-align: center;
+    font-size: 24px;
+}
+    
+article#Login form div.loginfield label {
+    color: #F3F2F2;
+    font-size: 14px;
+    padding-right: 160px;
+}
+    
+article#Login form div.loginfield input {
+    border-radius: 10px;
+    border: 0px;
+    height: 2.2em;
+    width: 18em;
+}
+    
+article#Login form div.loginfield {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+    
+article#Login form div.checkbox {
+    padding-right: 95px;
+    text-align: center;
+    color: #4D3D3C;
+    font-weight: bold;
+    font-size: 16px;
+}
+    
+article#Login form div.checkbox input {
+    border: 2px solid #4D3D3C;
+    box-sizing: border-box;
+}
+    
+article#Login form div.submit  {
+    text-align: center;
+    padding-top: 30px;    
+    padding-bottom: 30px;
+    
+}
+    
+article#Login form div.submit input {
+    height: 1.6em;
+    width: 8em;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #3D4D42;
+}
+    
+article#Login form div.submit input.submittext {
+    color: #F3F2F2;
+    font-weight: bold;
+    font-size: 22px;
+}
+    
+footer {
+    justify-content: space-around;
+    align-items: center;
+}
+    
+footer div p, footer div a {
+    color: #F3F2F2;
+    text-decoration: none;
+    font-size: 14px;
+    justify-content: center;
+}
+    
+footer div.contact p#contact {
+        font-size: 20px;
+}
+
+@media screen and (min-width: 600px) {
+
+    div#content header#MainHeader select.language {
+        display: inline-flex;
+        height: 50%;
+        padding-top: 5px;
+        border-radius: 10px;
+        background-color: #F3F2F2;
+        font-size: 18px;
+        color: #4D3D3C;
+        font-weight: bold;
+        border: 2px solid #4D3D3C;
+    }
+
+    div#content {
+        display: grid;
+        font-family: Roboto, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        height: 100vh;
+        grid-template-rows: 10% 1fr 20%;
+        gap: 50px;
+    }
+
+    header#MainHeader, footer {
+        min-width: 420px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: 2px solid #3D4D42;
+        background-color: #88998D;
+    }
+
+    header#MainHeader {
+        gap: 80px;
+    }
+
+    article {
+        max-width: 415px;
+        border-radius: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #3D4D42;
+        background-color: #88998D;
+    }
+
+    header#MainHeader a.Logo img{
+        display: block;
+        height: 90%;
+        margin-top: 5%;
+    }
+
+    header#MainHeader img#name {
+        display: block;
+        height: 50%;
+        align-self: center;
+    }
+
+    article#Login h1 {
+        color: #4D3D3C;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    article#Login form div.loginfield label {
+        color: #F3F2F2;
+        font-size: 14px;
+        padding-right: 250px;
+    }
+
+    article#Login form div.loginfield input {
+        border-radius: 10px;
+        border: 0px;
+        height: 2.5em;
+        width: 25em;
+    }
+
+    article#Login form div.loginfield {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    article#Login form div.checkbox {
+        padding-right: 180px;
+        text-align: center;
+        color: #4D3D3C;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    article#Login form div.checkbox input {
+        border: 2px solid #4D3D3C;
+        box-sizing: border-box;
+    }
+
+    article#Login form div.submit  {
+        text-align: center;
+        padding-top: 50px;    
+        padding-bottom: 50px;
+
+    }
+
+    article#Login form div.submit input {
+        height: 2em;
+        width: 12em;
+        border-radius: 10px;
+        border: 0px;
+        background-color: #3D4D42;
+    }
+
+    article#Login form div.submit input.submittext {
+        color: #F3F2F2;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    footer {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer div p, footer div a {
+        color: #F3F2F2;
+        text-decoration: none;
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    footer div.contact p#contact {
+        font-size: 24px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+}
